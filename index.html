@@ -5,6 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Portafolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
@@ -12,110 +15,75 @@
 
 <body>
 
-  <!-- Navegación -->
-  <nav class="navbar navbar-expand-lg bg-warning navbar-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">L</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
   <!-- Título -->
   <header class="container">
-    <div class="row align-item-center my-5">
-      <div class="col-md-8">
-        <h1 class="display-1 text-center">Link</h1>
+    <div class="row">
+      <div class="cont-trif col-sm-auto col-md-8">
+        <h1>Link</h1>
+        <!-- <img id="trif" src="/assets/media/main_photo_sm.png" alt="Trifuerza"> -->
+        <p>Aventurero innato oriundo del Reino de Hyrule. Portador de la Trifuerza y de la Espada Maestra. Héroe del
+          Tiempo.</p>
       </div>
-      <div class="col-md-4 d-none d-md-block">
-        <img src="assets/media/portrait.jpg" alt="Kirby figures over a keyboard" class="img-fluid">
-      </div>
+      <img class="d-none" src="/assets/media/main_photo_md.png" alt="">
     </div>
   </header>
 
   <!-- Habilidades -->
-  <section class="container">
-    <h2 class="section-header">Habilidades</h2>
-    <ul>
-      <li>Kendo</li>
-      <li>Kyūdō</li>
-      <li>Equitación</li>
-      <li>Explosivos</li>
-      <li>Música</li>
-      <li>Sigilo</li>
-    </ul>
+  <section class="container my-5">
+    <h2 class="section-header row justify-content-center">Habilidades</h2>
+
+    <div class="row justify-content-center">
+      <div class="col-auto"><img class="habilidades" src="/assets/media/icons/sword.png" alt="Kendo"></div>
+      <div class="col-auto"><img class="habilidades" src="/assets/media/icons/arch.png" alt="Kyūdō"></div>
+      <div class="col-auto"><img class="habilidades" src="/assets/media/icons/epona.png" alt="Equitación"></div>
+      <div class="col-auto"><img class="habilidades" src="/assets/media/icons/ocarina.png" alt="Música"></div>
+      <div class="col-auto"><img class="habilidades" src="/assets/media/icons/boots.png" alt="Sigilo"></div>
+      <div class="col-auto"><img class="habilidades" src="/assets/media/icons/bomb.png" alt="Explosivos"></div>
+    </div>
   </section>
 
   <!-- Proyectos -->
 
-  <section class="container p-5">
+  <section class="container">
     <h2 class="section-header">Proyectos</h2>
-    <div class="card mb-3">
-      <img src="assets/media/spiritual stones.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Piedras espirituales</h5>
-        <p class="card-text">Con tan solo 10 años, conseguí las tres Piedras Espirituales.</p>
-      </div>
-    </div>
 
-    <div class="card mb-3">
-      <img src="assets/media/jabu jabu.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Rescate princesa</h5>
-        <p class="card-text">Al igual que Pinocho, estuve en las entrañas de una ballena, aunque en mi caso, es busca de
-          la Princesa Zora.</p>
-      </div>
-    </div>
+    <article>
+      <img src="/assets/media/spiritual stones.jpg" alt="">
+      <h5>Piedras espirituales</h5>
+      <p>Con tan solo 10 años conseguí las tres piedras espirituales.</p>
+    </article>
 
-    <div class="card mb-3">
-      <img src="assets/media/deku.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Deku Tree</h5>
-        <p class="card-text">Recorrí el interior de un árbol milenario para encontrar la fuente de su malestar.</p>
-      </div>
-    </div>
+    <article>
+      <img src="/assets/media/jabu jabu.jpg" alt="">
+      <h5>Jabu Jabu</h5>
+      <p>Al igual que Pinocho, estuve en las entrañas de una ballena, aunque en mi caso, para rescatar a la Princesa de
+        los Zora, Ruto.</p>
+    </article>
 
-    <div class="card mb-3">
-      <img src="assets/media/ganondorf.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Ganondorf</h5>
-        <p class="card-text">Mantuve la paz en Hyrule al detener a Ganondorf.</p>
-      </div>
-    </div>
+    <article>
+      <img src="/assets/media/deku.jpg" alt="">
+      <h5>Guardián del Bosque</h5>
+      <p>Recorrí el interior del Gran Árbol Deku para derrotar a la Reina Gohma y así romper la maldición. </p>
+    </article>
 
-    <div class="card mb-3">
-      <img src="assets/media/gerudo.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Rescate de prisioneros</h5>
-        <p class="card-text">Rescaté carpinteros cautivos en Gerudo.</p>
-      </div>
-    </div>
+    <article>
+      <img src="/assets/media/ganondorf.png" alt="">
+      <h5>Ganondorf</h5>
+      <p>Derroté a Ganondorf y puse fin a la tiranía que duró años en el reino de Hyrule.</p>
+    </article>
+
+    <article>
+      <img src="/assets/media/gerudo.jpg" alt="">
+      <h5>Rescate de prisioneros</h5>
+      <p>Rescaté a los carpinteros cautivos en la Fortaleza Gerudo.</p>
+    </article>
+
   </section>
 
   <!-- Contacto -->
 
-  <form action="">
-    <h2 class="section-header">Contacto</h2>
-    <div class="row g-3">
-      <div class="col">
-        <input type="text" class="form-control" placeholder="First name" aria-label="First name">
-      </div>
-      <div class="col">
-        <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-      </div>
-    </div>
+  <form action="" class="container">
+
   </form>
 
   <!-- JavaScript -->

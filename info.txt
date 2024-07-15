@@ -2,28 +2,6 @@ Prueba consolidación Módulo 2:
         Portafolio Link
 
 
-
-A. Información personal 
-    Soy Link, aventurero innato oriundo del Reino de Hyrule. Portador de la Trifuerza y de la Espada Maestra. Héroe del Tiempo y de Los Vientos. 
-
-B. Habilidades
-    - Kendo
-    - Equitación
-    - Arquería
-    - Ocarina
-    - Sigilo
-    - Valentía
-
-C. Proyectos realizados
-    - Mantuve la paz en Hyrule al detener a Ganondorf.
-    - Con tan solo 10 años, conseguí las tres Piedras Espirituales.
-    - Al igual que Pinocho, estuve en las entrañas de una ballena, aunque en mi caso, es busca de la Princesa Zora.
-    - Recorrí el interior de un árbol milenario para encontrar la fuente de su malestar.
-    - Rescaté carpinteros cautivos en Gerudo.
-
-D. Formulario de Contacto
-
-
 REQUERIMIENTOS:
 
 1.- Estructura HTML (15 puntos):
