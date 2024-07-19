@@ -15,12 +15,38 @@
 
 <body>
 
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="assets/media/triforce navbar.png" alt="" height="25px" style="opacity: 0.4; margin-bottom: 5px;"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="font-size: 10px; margin-bottom: 5px;"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Habilidades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
   <!-- Título -->
-  <header class="container">
+  <header class="container" id="main">
     <div class="row">
       <div class="cont-trif col-sm-auto col-md-8">
         <h1>Link</h1>
-        <!-- <img id="trif" src="/assets/media/main_photo_sm.png" alt="Trifuerza"> -->
+        <img id="trif" src="/assets/media/main_photo_sm.png" alt="Trifuerza">
         <p>Aventurero innato oriundo del Reino de Hyrule. Portador de la Trifuerza y de la Espada Maestra. Héroe del
           Tiempo.</p>
       </div>
@@ -28,9 +54,12 @@
     </div>
   </header>
 
+
   <!-- Habilidades -->
-  <section class="container my-5">
-    <h2 class="section-header row justify-content-center">Habilidades</h2>
+  <!-- Agregar hover cursor -->
+
+  <section class="container container-habilidades" id="skills">
+    <h2 class="section-header">Habilidades</h2>
 
     <div class="row justify-content-center">
       <div class="col-auto"><img class="habilidades" src="/assets/media/icons/sword.png" alt="Kendo"></div>
@@ -44,47 +73,72 @@
 
   <!-- Proyectos -->
 
-  <section class="container">
+  <section class="container" id="projects">
     <h2 class="section-header">Proyectos</h2>
 
     <article>
-      <img src="/assets/media/spiritual stones.jpg" alt="">
+      <img class="portada-proyecto" src="/assets/media/spiritual stones.jpg" alt="Piedras espirituales en el templo">
       <h5>Piedras espirituales</h5>
-      <p>Con tan solo 10 años conseguí las tres piedras espirituales.</p>
+      <p>Quas possimus adipisci laborum laudantium amet doloremque sunt ullam maxime minima dolorum, repellendus,
+        laboriosam similique recusandae quis veniam voluptates libero, tempora atque!</p>
     </article>
 
     <article>
-      <img src="/assets/media/jabu jabu.jpg" alt="">
+      <img class="portada-proyecto" src="/assets/media/jabu jabu.jpg" alt="Jabu Jabu">
       <h5>Jabu Jabu</h5>
-      <p>Al igual que Pinocho, estuve en las entrañas de una ballena, aunque en mi caso, para rescatar a la Princesa de
-        los Zora, Ruto.</p>
+      <p>Dolore consequuntur cum ullam officia, amet quos rem, sapiente totam maxime, voluptate eius velit illo eos
+        doloribus atque iusto minus in modi.</p>
     </article>
 
     <article>
-      <img src="/assets/media/deku.jpg" alt="">
+      <img class="portada-proyecto" src="/assets/media/deku.jpg" alt="Gran árbol Deku">
       <h5>Guardián del Bosque</h5>
-      <p>Recorrí el interior del Gran Árbol Deku para derrotar a la Reina Gohma y así romper la maldición. </p>
+      <p>Non aliquid voluptate ipsam in dolorum, reiciendis quis. Ratione doloribus ex sunt quisquam architecto, optio
+        eligendi porro ut aperiam totam? Sapiente, quas.</p>
     </article>
 
     <article>
-      <img src="/assets/media/ganondorf.png" alt="">
+      <img class="portada-proyecto" src="/assets/media/ganondorf.png" alt="Ganondorf">
       <h5>Ganondorf</h5>
-      <p>Derroté a Ganondorf y puse fin a la tiranía que duró años en el reino de Hyrule.</p>
+      <p>Minus neque blanditiis voluptatem nisi incidunt quod dolore, voluptatibus sequi minima laborum, similique enim
+        omnis repudiandae laboriosam quisquam dolores libero expedita magni?</p>
     </article>
 
     <article>
-      <img src="/assets/media/gerudo.jpg" alt="">
+      <img class="portada-proyecto" src="/assets/media/gerudo.jpg" alt="Fortaleza Gerudo">
       <h5>Rescate de prisioneros</h5>
-      <p>Rescaté a los carpinteros cautivos en la Fortaleza Gerudo.</p>
+      <p>Molestias delectus iste nostrum perspiciatis quos tempore, dolore placeat tempora? Quasi sunt rerum nisi
+        dignissimos excepturi tenetur sint numquam itaque delectus tempore?</p>
     </article>
 
   </section>
 
   <!-- Contacto -->
 
-  <form action="" class="container">
+  <div class="container" id="contact">
+    <h2 class="section-header">Contacto</h2>
+    <p class="form-paragraph">Munis quod ad ducimus harum quae reiciendis sunt fugiat assumenda!</p>
 
-  </form>
+    <form action="">
+      
+      <input class="form-section" type="text" placeholder="Nombre" required>
+
+      <input class="form-section" type="email" placeholder="Correo electrónico" required>
+
+      <textarea class="form-section" name="" id="" placeholder="Escriba su mensaje aquí..." required></textarea>
+    </form>
+
+    <div class="papa-button">
+      <button>Enviar</button>
+    </div>
+    <img class="navi" src="assets/media/navi.gif" alt="Navi">
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+      <p>mnrstn</p>
+  </footer>
 
   <!-- JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
