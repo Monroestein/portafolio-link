@@ -26,7 +26,6 @@ h1 {
     font-size: 9rem;
     color: var(--main-title-color);
     margin-top: 4.375rem;
-    text-align: center;
 }
 
 h2 {
@@ -51,10 +50,6 @@ a:hover{
     color: var(--link-hover-color);
 }
 
-.cont-trif p{
-    font-size: 1.0625rem;
-}
-
 .section-header{
     text-align: center;
     margin-bottom: 20px;
@@ -62,9 +57,15 @@ a:hover{
     /* border-bottom: 1px dotted var(--section-title); */
 }
 
+#main p{
+    margin: auto 10%;
+}
+
 article p{
     padding: 0px 30px;
     margin-bottom: 30px;
+    font-size: 0.875rem;
+    line-height: 16px;
 }
 
 .form-paragraph{
@@ -72,23 +73,12 @@ article p{
     font-size: 13px;
 }
 
-ul{
-    display: inline-block;
-    list-style: none;
-}
 
-/* Contenedores */
+/* ----------------------- CONTAINERS ----------------------- */
 
 .navbar{
     background-color: var(--section-title);
     height: auto;
-}
-
-.cont-trif {
-    text-align: center;
-    position: relative;
-    width: 100%;
-    height: 40vh;
 }
 
 .container{
@@ -97,27 +87,51 @@ ul{
     position: relative;
 }
 
+#main{
+    text-align: center;
+    margin-bottom: 80px;
+    position: relative;
+    /* height: 10%; */
+}
+
 .skills-gallery{
     text-align: center;
+    width: auto;
+    margin: 0 auto;
 }
 
 .skills-gallery div{
     display: inline-block;
-    margin: 0 5px;
-    width: 50px;
+    margin: 15px;
+    width: 30%;
+    max-width:115px;
 }
 
-article{
+.projects-box{
+    margin: 0 auto;
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-article{
+    width: 300px;
     background-color: var(--article-background);
     padding: 0.1875rem;
-    margin: 35px 20px;
     border-radius: 10px;
     font-size: 0.875rem;
     text-align: center;
     line-height: 1.375rem;
 }
 
-form{
+#contact{
+    position: relative;
+}
+
+.formulario{
     margin: 10px 50px;
 }
 
@@ -148,20 +162,22 @@ button{
     color: var(--main-background);
 }
 
-footer{
-    text-align: center;
+.signature{
+    height: 25px;
+    text-align: left;
     background-color: var(--section-title);
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
-footer p{
-    display: inline-block;
+/* .signature p{
     margin-bottom: 5px;
+    text-transform: uppercase;
+    line-height: 30px;
     color: var(--footer-color);
     font-size: 11px;
-}
+} */
 
-/* Images */
+/* ----------------------- IMAGES ----------------------- */
 
 article img {
     display: block;
@@ -169,13 +185,13 @@ article img {
 }
 
 .gallery-item img {
-    width: 25%;
-    margin: 10px 5px;
+    width: 100%;
+    /* margin: 0; */
 }
 
 #trif {
     position: absolute;
-    height: 40vh;
+    height: 100%;
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -190,40 +206,64 @@ article img {
     border-radius: 25px;
 }
 
-.navi{
-    height:4.375rem;
-    opacity: 0.6;
+#navi{
     position: absolute;
-    right: 50px;
-    bottom: 120px;
+    height:20%;
+    top: 7%;
+    left: 68%;
+    transform: translate(-50%, -50%);
+    opacity: 0.5;
+    z-index: -5;
 }
 
-/* Queries */
+/* ----------------------- QUERIES ----------------------- */
 
 @media (min-width:768px){
-
-    .cont-trif p{
-        margin: auto 70px;
-    }
 
     .skills-item{
         margin: 10px 20px;
     }
 
-    article{
-        margin: auto 70px 40px 70px;
+    .formulario{
+        margin: 10px 130px;
     }
 
-    form{
-        margin: 10px 130px;
+    #navi{
+        left: 64%;
     }
 
 }
 
-@media (min-width:1200px){
+@media (min-width:992px){
 
-    .cont-trif p{
+    #main p{
+        width: 530px;
+        margin: 0 auto;
+    }
+
+    .skills-gallery{
         margin: auto 90px;
     }
 
+    .formulario{
+        margin: auto 260px;
+    }
+}
+
+@media (min-width:1200px){
+
+    .formulario{
+        margin: auto 290px;
+    }
+
+    #navi{
+        left: 61%;
+    }
+}
+
+@media (min-width:1400px){
+
+    .formulario{
+        margin: auto 390px;
+    }
 }

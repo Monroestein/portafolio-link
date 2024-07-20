@@ -45,15 +45,11 @@
 
   <!-- Título -->
   <header class="container" id="main">
-    <div class="row">
-      <div class="cont-trif col-sm-auto col-md-8">
-        <h1>Link</h1>
-        <img id="trif" src="assets/media/main_photo_sm.png" alt="Trifuerza">
-        <p>Aventurero innato oriundo del Reino de Hyrule. Portador de la Trifuerza y de la Espada Maestra. Héroe del
-          Tiempo.</p>
-      </div>
-      <img class="d-none" src="assets/media/main_photo_md.png" alt="">
-    </div>
+    <h1>Link</h1>
+    <p>
+      Aventurero innato oriundo del Reino de Hyrule. Portador de la Trifuerza y de la Espada Maestra. Héroe del Tiempo.
+    </p>
+    <img id="trif" src="assets/media/main_photo_sm.png" alt="Triforce">
   </header>
 
 
@@ -89,40 +85,42 @@
   <section class="container" id="projects">
     <h2 class="section-header">Proyectos</h2>
 
-    <article>
-      <img class="portada-proyecto" src="assets/media/spiritual stones.jpg" alt="Piedras espirituales en el templo">
-      <h5>Piedras espirituales</h5>
-      <p>Quas possimus adipisci laborum laudantium amet doloremque sunt ullam maxime minima dolorum, repellendus,
-        laboriosam similique recusandae quis veniam voluptates libero, tempora atque!</p>
-    </article>
-
-    <article>
-      <img class="portada-proyecto" src="assets/media/jabu jabu.jpg" alt="Jabu Jabu">
-      <h5>Jabu Jabu</h5>
-      <p>Dolore consequuntur cum ullam officia, amet quos rem, sapiente totam maxime, voluptate eius velit illo eos
-        doloribus atque iusto minus in modi.</p>
-    </article>
-
-    <article>
-      <img class="portada-proyecto" src="assets/media/deku.jpg" alt="Gran árbol Deku">
-      <h5>Guardián del Bosque</h5>
-      <p>Non aliquid voluptate ipsam in dolorum, reiciendis quis. Ratione doloribus ex sunt quisquam architecto, optio
-        eligendi porro ut aperiam totam? Sapiente, quas.</p>
-    </article>
-
-    <article>
-      <img class="portada-proyecto" src="assets/media/ganondorf.png" alt="Ganondorf">
-      <h5>Ganondorf</h5>
-      <p>Minus neque blanditiis voluptatem nisi incidunt quod dolore, voluptatibus sequi minima laborum, similique enim
-        omnis repudiandae laboriosam quisquam dolores libero expedita magni?</p>
-    </article>
-
-    <article>
-      <img class="portada-proyecto" src="assets/media/gerudo.jpg" alt="Fortaleza Gerudo">
-      <h5>Rescate de prisioneros</h5>
-      <p>Molestias delectus iste nostrum perspiciatis quos tempore, dolore placeat tempora? Quasi sunt rerum nisi
-        dignissimos excepturi tenetur sint numquam itaque delectus tempore?</p>
-    </article>
+    <div class="projects-box">
+      <article class="project-article" id="stones">
+        <img class="portada-proyecto" src="assets/media/spiritual stones.jpg" alt="Piedras espirituales en el templo">
+        <h5>Piedras espirituales</h5>
+        <p>Quas possimus adipisci laborum laudantium amet doloremque sunt ullam maxime minima dolorum, repellendus,
+          laboriosam similique recusandae quis veniam voluptates libero, tempora atque!</p>
+      </article>
+  
+      <article class="project-article">
+        <img class="portada-proyecto" src="assets/media/jabu jabu.jpg" alt="Jabu Jabu">
+        <h5>Jabu Jabu</h5>
+        <p>Dolore consequuntur cum ullam officia, amet quos rem, sapiente totam maxime, voluptate eius velit illo eos
+          doloribus atque iusto minus in modi.</p>
+      </article>
+  
+      <article class="project-article">
+        <img class="portada-proyecto" src="assets/media/deku.jpg" alt="Gran árbol Deku">
+        <h5>Guardián del Bosque</h5>
+        <p>Non aliquid voluptate ipsam in dolorum, reiciendis quis. Ratione doloribus ex sunt quisquam architecto, optio
+          eligendi porro ut aperiam totam? Sapiente, quas.</p>
+      </article>
+  
+      <article class="project-article">
+        <img class="portada-proyecto" src="assets/media/ganondorf.png" alt="Ganondorf">
+        <h5>Ganondorf</h5>
+        <p>Minus neque blanditiis voluptatem nisi incidunt quod dolore, voluptatibus sequi minima laborum, similique enim
+          omnis repudiandae laboriosam quisquam dolores libero expedita magni?</p>
+      </article>
+  
+      <article class="project-article">
+        <img class="portada-proyecto" src="assets/media/gerudo.jpg" alt="Fortaleza Gerudo">
+        <h5>Rescate de prisioneros</h5>
+        <p>Molestias delectus iste nostrum perspiciatis quos tempore, dolore placeat tempora? Quasi sunt rerum nisi
+          dignissimos excepturi tenetur sint numquam itaque delectus tempore?</p>
+      </article>
+    </div>
 
   </section>
 
@@ -130,9 +128,10 @@
 
   <div class="container" id="contact">
     <h2 class="section-header">Contacto</h2>
+    <img id="navi" src="assets/media/navi.gif" alt="Navi">
     <p class="form-paragraph">Munis quod ad ducimus harum quae reiciendis sunt fugiat assumenda!</p>
 
-    <form action="">
+    <form class="formulario" action="">
 
       <input class="form-section" type="text" placeholder="Nombre" required>
 
@@ -144,13 +143,12 @@
     <div class="papa-button">
       <button>Enviar</button>
     </div>
-    <img class="navi" src="assets/media/navi.gif" alt="Navi">
 
   </div>
 
   <!-- Footer -->
-  <footer>
-    <p>mnrstn</p>
+  <footer class="signature">
+    <!-- <p>Josefina Zamorano Valdivia</p> -->
   </footer>
 
   <!-- JavaScript -->
