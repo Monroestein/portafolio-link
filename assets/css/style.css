@@ -81,6 +81,13 @@ article p{
     height: auto;
 }
 
+#ganondorf-btn{
+    padding: 6 6 0 6;
+    margin-top: 4px;
+    color: var(--main-background);
+    background-color: var(--footer-color);
+}
+
 .container{
     margin-top: 7%;
     padding: 1.25rem;
@@ -109,12 +116,11 @@ article p{
 
 .projects-box{
     margin: 0 auto;
-    width: 80vw;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
 }
 
 .project-article{
@@ -153,7 +159,7 @@ textarea{
     justify-content: center;
 }
 
-button{
+.boton{
     padding: 5px 20px;
     border: none;
     background-color: var(--section-title);
@@ -162,20 +168,12 @@ button{
     color: var(--main-background);
 }
 
-.signature{
+footer{
     height: 25px;
     text-align: left;
     background-color: var(--section-title);
     margin-top: 50px;
 }
-
-/* .signature p{
-    margin-bottom: 5px;
-    text-transform: uppercase;
-    line-height: 30px;
-    color: var(--footer-color);
-    font-size: 11px;
-} */
 
 /* ----------------------- IMAGES ----------------------- */
 

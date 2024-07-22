@@ -18,7 +18,7 @@
   <!-- Barra de navegación -->
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="assets/media/triforce navbar.png" alt="" height="25px"
+      <a id="triforce_button" class="navbar-brand" href="#"><img src="assets/media/triforce navbar.png" alt="" height="25px"
           style="opacity: 0.4; margin-bottom: 5px;"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,9 +27,6 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="#skills">Habilidades</a>
           </li>
           <li class="nav-item">
@@ -37,6 +34,9 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contacto</a>
+          </li>
+          <li>
+            <button id="ganondorf-btn" class="boton">No tocar</button>
           </li>
         </ul>
       </div>
@@ -47,7 +47,7 @@
   <header class="container" id="main">
     <h1>Link</h1>
     <p>
-      Aventurero innato oriundo del Reino de Hyrule. Portador de la Trifuerza y de la Espada Maestra. Héroe del Tiempo.
+      Aventurero innato oriundo del Reino de Hyrule. Portador de la Trifuerza y de la Espada Maestra. <br>Héroe del Tiempo.
     </p>
     <img id="trif" src="assets/media/main_photo_sm.png" alt="Triforce">
   </header>
@@ -61,21 +61,27 @@
     <div class="skills-gallery">
       <div class="gallery-item">
         <img src="assets/media/icons/sword.png" alt="Kendo">
+        <p id="firstSkill">Kendo</p>
       </div>
       <div class="gallery-item">
         <img src="assets/media/icons/arch.png" alt="Kyūdō">
+        <p id="secondSkill">Kyūdō</p>
       </div>
       <div class="gallery-item">
         <img src="assets/media/icons/epona.png" alt="Bajutsu">
+        <p id="thirdSkill">Bajutsu</p>
       </div>
       <div class="gallery-item">
         <img src="assets/media/icons/ocarina.png" alt="Ongaku">
+        <p id="fourthSkill">Ongaku</p>
       </div>
       <div class="gallery-item">
         <img src="assets/media/icons/boots.png" alt="Ninjutsu">
+        <p id="fifthSkill">Ninjutsu</p>
       </div>
       <div class="gallery-item">
         <img src="assets/media/icons/bomb.png" alt="Kayakujutsu">
+        <p id="sixthSkill">Kayakujutsu</p>
       </div>
     </div>
   </section>
@@ -133,23 +139,25 @@
 
     <form class="formulario" action="">
 
-      <input class="form-section" type="text" placeholder="Nombre" required>
+      <input class="form-section" id="name_input" type="text" placeholder="Nombre" pattern="/[a-zA-ZñÑáéíóúÁÉÍÓÚ]{3,50}/" required>
 
-      <input class="form-section" type="email" placeholder="Correo electrónico" required>
+      <input class="form-section" type="email" placeholder="Correo electrónico" pattern="/[a-z]{1,50}@[a-z]{1,50}.[a-z]{2,3}/" required>
 
       <textarea class="form-section" name="" id="" placeholder="Escriba su mensaje aquí..." required></textarea>
     </form>
 
     <div class="papa-button">
-      <button>Enviar</button>
+      <input id="formBtn" class="boton" type="submit" value="Enviar">
     </div>
 
   </div>
 
   <!-- Footer -->
   <footer class="signature">
-    <!-- <p>Josefina Zamorano Valdivia</p> -->
   </footer>
+
+  <!-- Cositas -->
+  <audio id="bestSong" src="assets/media/mp3/Ganon Rosario - Dale, Zelda, Dale (Tema Oficial).mp3" loop="loop"></audio>
 
   <!-- JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
